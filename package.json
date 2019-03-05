@@ -1,0 +1,25 @@
+{
+  "name": "cookiejar2json",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "dist/cookiejar2json.cjs.js",
+  "module": "dist/cookiejar2json.esm.js",
+  "browser": "dist/cookiejar2json.umd.js",
+  "bin": {
+    "cookiejar2json": "dist/cookiejar2json-cli.js"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "prepublish": "npm run build",
+    "prepack": "npm run build"
+  },
+  "devDependencies": {
+    "rollup": "^1.4.1",
+    "rollup-plugin-commonjs": "^9.2.1",
+    "rollup-plugin-node-resolve": "^4.0.1"
+  },
+  "files": [
+    "dist"
+  ]
+}
